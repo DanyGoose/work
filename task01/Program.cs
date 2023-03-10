@@ -1,13 +1,13 @@
-﻿Console.Write("Введите первое целое число:");
-int numberOne = Convert.ToInt32(Console.WriteLine());
-Console.Write("Введите второе целое число:");
-int numberTwo = Convert.ToInt32(Console.WriteLine());
+﻿Console.Write("Введите первое целое число: ");
+int numberOne = Convert.ToInt32(Console.ReadLine()); 
+Console.Write("Введите второе целое число: ");
+int numberTwo = Convert.ToInt32(Console.ReadLine());
 int square = numberTwo * numberTwo;
-if (numberOne == square)
+if (square == numberOne)
 {
-    Console.ReadLine("квадрат второго числа равен первому числу.");
-}
-else 
+    Console.WriteLine("Квадрат второго числа равен первому числу"); 
+} 
+else
 {
-    Console.ReadLine("квадрат второго числа не равен первому числу.");
+    Console.WriteLine("Квадрат второго числа не равен первому числу");
 }
