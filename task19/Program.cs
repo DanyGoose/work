@@ -1,7 +1,7 @@
 ﻿Console.WriteLine("Введите целое пятизначное число");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if (number > 9999 && number < 100000) YesNo(number);
+if (number > 9999 && number < 100000 || number < -9999 && number > -100000 ) YesNo(number);
 else Console.WriteLine("Число не подходит!");
 
 void YesNo(int num0)
