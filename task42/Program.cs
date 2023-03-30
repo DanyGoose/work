@@ -20,13 +20,13 @@
     return arrTransferNumber;
 }
 
-void PrintArray(int[] arrTransferNumber)
+void PrintArray(int[] arr)
 {
     Console.Write("[");
-    for (int i = 0; i < arrTransferNumber.Length; i++)
+    for (int i = 0; i < arr.Length; i++)
     {
-        if (i < arrTransferNumber.Length - 1) Console.Write($"{arrTransferNumber[i]}, ");
-        else Console.Write($"{arrTransferNumber[i]}");
+        if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
+        else Console.Write($"{arr[i]}");
     }
     Console.Write("]");
 }
