@@ -28,12 +28,13 @@ void PrintMatrix(int[,] matrix)
 
 void PrintArray(double[] arr)
 {
-    Console.Write("Среднее арифметическое каждого столбца -> ");
+    Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
         if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
         else Console.Write($"{arr[i]}");
     }
+    Console.Write("]");
 }
 
 double[] SearchArithmeticMean(int[,] arr, int round)
@@ -58,4 +59,5 @@ PrintMatrix(arrayMatrix);
 Console.WriteLine();
 
 double[] result = SearchArithmeticMean(arrayMatrix, 1);
+Console.Write("Среднее арифметическое каждого столбца -> ");
 PrintArray(result);

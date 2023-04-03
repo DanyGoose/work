@@ -26,5 +26,5 @@ void PrintMatrix(double[,] matrix)
     }
 }
 
-int[,] arrayMatrix = CreateMatrixRndInt(3, 4, -10, 10);
+double[,] arrayMatrix = CreateMatrixRndInt(3, 4, -10, 10);
 PrintMatrix(arrayMatrix);
